@@ -4,12 +4,106 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Montserrat-400;
+  src: url(public/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-500;
+  src: url(public/fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: Montserrat-600;
+  src: url(public/fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: Montserrat-700;
+  src: url(public/fonts/Montserrat-Bold.ttf);
+}
+
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f5f5f5;
+  font-family: Montserrat-400;
+  font-size: 16px;
+  max-width: 1440px;
+}
+
+:root {
+  --color-primary: #000000;
+  --color-secondary: #f36e0c;
+  --color-nav: #292b41;
 }
 
 a,
-li {
+a:hover,
+a:active,
+a:visited {
   text-decoration: none;
+  color: #000;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 30px auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Montserrat-500;
+}
+
+.navbar__logo {
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.navbar__links a:hover,
+.navbar__links a:active {
+  border-bottom: 4px solid var(--color-secondary);
+}
+
+.navbar__btn {
+  border: 0.5px solid #403636;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-family: Montserrat-600;
+  font-size: 18px;
+  background: #ffffff;
+  color: var(--color-nav);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+  margin-top: 84px;
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__heading {
+  font-family: Montserrat-700;
+  font-size: 56px;
+}
+
+.hero__heading span {
+  padding-bottom: 20px;
+  border-bottom: 4px solid var(--color-secondary);
+}
+
+.hero__paragraph {
+  font-family: Montserrat-400;
+  font-size: 16px;
+  margin: 60px 0 40px 0;
+  line-height: 30px;
 }
