@@ -1,3 +1,5 @@
+/* GLOBAL STYLES */
+
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +48,19 @@ a:visited {
   margin: 30px auto;
 }
 
+.heading {
+  font-family: Montserrat-700;
+  font-size: 56px;
+}
+
+.orange-b {
+  padding-bottom: 20px;
+  border-bottom: 6px solid var(--color-secondary);
+  border-radius: 4px;
+}
+
+/* NAVBAR */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -78,6 +93,8 @@ a:visited {
   color: var(--color-nav);
 }
 
+/* HERO */
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -86,19 +103,12 @@ a:visited {
   margin-top: 84px;
 }
 
-.hero__left {
-  display: flex;
-  flex-direction: column;
+.hero__start {
+  /* TODO: Remove unused style */
 }
 
 .hero__heading {
-  font-family: Montserrat-700;
-  font-size: 56px;
-}
-
-.hero__heading span {
-  padding-bottom: 20px;
-  border-bottom: 4px solid var(--color-secondary);
+  /* TODO: Remove unused style */
 }
 
 .hero__paragraph {
@@ -106,4 +116,50 @@ a:visited {
   font-size: 16px;
   margin: 60px 0 40px 0;
   line-height: 30px;
+}
+
+.hero__btn {
+  background: linear-gradient(0deg, #e40a0a 0%, #ff5c00 100%);
+  border: 0.5px solid rgba(255, 255, 255, 0.64);
+  box-shadow: 0px 3px 3px rgba(243, 110, 12, 0.2);
+  border-radius: 100px;
+  padding: 14px 32px;
+  font-family: Montserrat-600;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* WHO WE ARE */
+
+.who-we-are {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 120px;
+  margin-top: 160px;
+}
+
+.who-we-are__start {
+  /* TODO Remove unused style */
+}
+
+.who-we-are__heading {
+  /* TODO Remove unused style */
+}
+
+.who-we-are__end {
+  flex: 0.9;
+}
+
+.who-we-are__paragraph {
+  font-family: Montserrat-400;
+  font-size: 16px;
+  margin: 60px 0 40px 0;
+  line-height: 30px;
+}
+
+/* HOW WE WORK */
+
+.how-we-work {
+  background-color: #081a4a;
 }
