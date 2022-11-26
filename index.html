@@ -8,20 +8,23 @@
     <title>Be.Next</title>
   </head>
   <body>
-    <nav class="navbar container">
-      <div class="navbar__logo">
-        <img src="public/images/Logo.svg" alt="logo" />
-      </div>
-      <div class="navbar__links">
-        <a href="#" class="nav__link">Who we are</a>
-        <a href="#" class="nav__link">How it works</a>
-        <a href="#" class="nav__link">Our technologies</a>
-        <a href="#" class="nav__link">Get in touch</a>
-      </div>
-      <div>
-        <button class="navbar__btn">Contacts</button>
-      </div>
-    </nav>
+    <div class="nav-sticky">
+      <nav class="navbar container">
+        <div class="navbar__logo">
+          <img src="public/images/Logo.svg" alt="logo" />
+        </div>
+        <div class="navbar__links desktop">
+          <a href="#who-we-are" class="nav__link">Who we are</a>
+          <a href="#how-it-works" class="nav__link">How it works</a>
+          <a href="#our-technologies" class="nav__link">Our technologies</a>
+          <a href="#get-in-touch" class="nav__link">Get in touch</a>
+        </div>
+        <div>
+          <button class="navbar__btn desktop">Contacts</button>
+        </div>
+        <div></div>
+      </nav>
+    </div>
     <section class="hero container">
       <div class="hero__start">
         <h2 class="hero__heading heading">Work the way that works for you</h2>
@@ -36,7 +39,7 @@
         <img src="public/images/hero-end.png" alt="team" />
       </div>
     </section>
-    <section class="who-we-are container">
+    <section id="who-we-are" class="who-we-are container">
       <div class="who-we-are__start">
         <h2 class="who-we-are__heading heading">Who we are</h2>
       </div>
@@ -51,7 +54,7 @@
         </p>
       </div>
     </section>
-    <section class="how-we-work">
+    <section id="how-it-works" class="how-we-work">
       <div class="container how-we-work__content">
         <h2 class="how-we-work__heading heading">How we work</h2>
         <p class="how-we-work__paragraph">
@@ -101,64 +104,121 @@
         </div>
       </div>
     </section>
-    <section class="our-technologies container">
+    <section id="our-technologies" class="our-technologies container">
       <h2 class="our-technologies__heading heading">Our technologies</h2>
       <div class="our-technologies__technologies">
         <div class="our-technologies__technology">
           <div class="our-technologies__img-container">
             <img src="public/images/tech/js.svg" alt="js" />
           </div>
-          <span class="our-technologies__technology-name"></span>
+          <h3 class="our-technologies__technology-name">JavaScript</h3>
         </div>
         <div class="our-technologies__technology">
           <div class="our-technologies__img-container">
             <img src="public/images/tech/ts.svg" alt="ts" />
           </div>
-          <span class="our-technologies__technology-name"></span>
+          <h3 class="our-technologies__technology-name">TypeScript</h3>
         </div>
         <div class="our-technologies__technology">
           <div class="our-technologies__img-container">
             <img src="public/images/tech/react.svg" alt="react" />
           </div>
-          <span class="our-technologies__technology-name"></span>
+          <h3 class="our-technologies__technology-name">React</h3>
         </div>
         <div class="our-technologies__technology">
           <div class="our-technologies__img-container">
             <img src="public/images/tech/redux.svg" alt="redux" />
           </div>
-          <span class="our-technologies__technology-name"></span>
+          <h3 class="our-technologies__technology-name">Redux</h3>
         </div>
         <div class="our-technologies__technology">
           <div class="our-technologies__img-container">
             <img src="public/images/tech/nextjs.svg" alt="nextjs" />
           </div>
-          <span class="our-technologies__technology-name"></span>
+          <h3 class="our-technologies__technology-name">Next.js</h3>
         </div>
         <div class="our-technologies__technology">
           <div class="our-technologies__img-container">
             <img src="public/images/tech/vue.svg" alt="vue" />
           </div>
-          <span class="our-technologies__technology-name"></span>
+          <h3 class="our-technologies__technology-name">Vue.js</h3>
         </div>
         <div class="our-technologies__technology">
           <div class="our-technologies__img-container">
             <img src="public/images/tech/node.svg" alt="node" />
           </div>
-          <span class="our-technologies__technology-name"></span>
+          <h3 class="our-technologies__technology-name">Node.js</h3>
         </div>
         <div class="our-technologies__technology">
           <div class="our-technologies__img-container">
             <img src="public/images/tech/css.svg" alt="css" />
           </div>
-          <span class="our-technologies__technology-name"></span>
+          <h3 class="our-technologies__technology-name">CSS</h3>
         </div>
         <div class="our-technologies__technology">
           <div class="our-technologies__img-container">
             <img src="public/images/tech/html.svg" alt="html" />
           </div>
-          <span class="our-technologies__technology-name"></span>
+          <h3 class="our-technologies__technology-name">HTML</h3>
         </div>
       </div>
     </section>
+    <div class="contact-us-bg">
+      <section id="contact-us" class="contact-us container">
+        <div class="contact-us__start">
+          <h2 class="contact-us__heading heading">Contact us</h2>
+          <p class="contact-us__paragraph">Let's work together</p>
+        </div>
+        <div class="separator"></div>
+        <div class="contact-us__end">
+          <form action="submit" method="post">
+            <div class="contact-us__form">
+              <input
+                class="contact-us__form-input"
+                type="text"
+                name="Full name"
+                placeholder="Name"
+              />
+              <input
+                class="contact-us__form-input"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+              <input
+                type="text"
+                class="contact-us__form-input"
+                name="your message"
+                placeholder="Your message"
+              />
+            </div>
+            <button class="contact-us__form-btn" type="submit">
+              Let's Start
+            </button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-left">
+          <img src="public/images/Logo-white.svg" alt="Logo" />
+          <p class="footer__reserved">© All rights reserved 2022</p>
+        </div>
+        <div class="footer-right">
+          <ul class="footer-socials">
+            <li class="footer-social__container facebook">
+              <a href="#"></a>
+            </li>
+            <li class="footer-social__container instagram">
+              <a href="#"></a>
+            </li>
+            <li class="footer-social__container linkedin">
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
