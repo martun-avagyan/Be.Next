@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="public/images/favicon.svg" />
-    <title>Be.Next</title>
+    <title>Be.next: IT & Business oriented company</title>
   </head>
   <body>
-    <div class="overlay"></div>
-    <div class="modal"></div>
     <div class="nav-sticky">
       <nav class="navbar container">
         <div class="navbar__logo">
           <img src="public/images/Logo.svg" alt="logo" />
         </div>
+
         <div class="navbar__links desktop">
           <a href="#who-we-are" class="nav__link">Who we are</a>
           <a href="#how-it-works" class="nav__link">How it works</a>
@@ -23,11 +22,10 @@
           <a href="#get-in-touch" class="nav__link">Get in touch</a>
         </div>
 
-        <div>
-          <button class="navbar__btn desktop">Contacts</button>
-        </div>
+        <button class="navbar__btn desktop">Contacts</button>
+
         <div class="menu-icon mobile tablet">
-          <img src="public/images/Menu.svg" alt="" />
+          <img src="public/images/Menu.svg" alt="menu button" />
         </div>
       </nav>
     </div>
@@ -42,7 +40,7 @@
         <button class="hero__btn">Let's start</button>
       </div>
       <div class="hero__end">
-        <!-- <img src="public/images/hero-end.png" alt="team" /> -->
+        <img src="public/images/hero-end.png" alt="" />
       </div>
     </section>
     <section id="who-we-are" class="who-we-are container">
@@ -71,7 +69,7 @@
           <div class="how-we-work__step">
             <img
               class="how-we-work__step-img"
-              src="public/images/business-3d-close-up-of-businessman-in-dark-blue-suit-looking-at-phone-1 1.png"
+              src="public/images/businessman-in-a-suit.png"
               alt="Business man"
             />
             <p class="how-we-work__step-paragraph">
@@ -83,7 +81,7 @@
           <div class="how-we-work__step">
             <img
               class="how-we-work__step-img"
-              src="public/images/business-3d-businessman-generated-a-new-great-idea 3.png"
+              src="public/images/businessman-has-an-idea.png"
               alt="Business man image"
             />
             <p class="how-we-work__step-paragraph">
@@ -97,7 +95,7 @@
           <div class="how-we-work__step">
             <img
               class="how-we-work__step-img"
-              src="public/images/business-3d-happy-woman-clapping-at-remote-business-meeting 1.png"
+              src="public/images/businesswoman-in-a-meeting.png"
               alt="Business woman"
             />
             <p class="how-we-work__step-paragraph">
@@ -179,24 +177,33 @@
         <div class="contact-us__end">
           <form action="submit" method="post">
             <div class="contact-us__form">
-              <input
-                class="contact-us__form-input"
-                type="text"
-                name="Full name"
-                placeholder="Name"
-              />
-              <input
-                class="contact-us__form-input"
-                type="email"
-                name="email"
-                placeholder="Email"
-              />
-              <input
-                type="text"
-                class="contact-us__form-input"
-                name="your message"
-                placeholder="Your message"
-              />
+              <label for="Full name">
+                <input
+                  class="contact-us__form-input"
+                  type="text"
+                  name="full name"
+                  id="full name"
+                  placeholder="Name"
+                />
+              </label>
+              <label for="email">
+                <input
+                  class="contact-us__form-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+              </label>
+              <label for="your message">
+                <input
+                  type="text"
+                  class="contact-us__form-input"
+                  id="your message"
+                  name="your message"
+                  placeholder="Your message"
+                />
+              </label>
             </div>
             <button class="contact-us__form-btn" type="submit">
               Let's Start
