@@ -29,39 +29,43 @@
         </div>
       </nav>
     </div>
-    <section class="hero container">
-      <div class="hero__start">
-        <h2 class="hero__heading heading">Work the way that works for you</h2>
-        <p class="hero__paragraph">
-          We are advisors and engineers, who cope with business challenges using
-          smart and fast management approaches and innovative technology
-          solutions
-        </p>
-        <button class="hero__btn">Let's start</button>
-      </div>
-      <div class="hero__end">
-        <img src="public/images/hero-end.png" alt="" />
-      </div>
-    </section>
-    <section id="who-we-are" class="who-we-are container">
-      <div class="who-we-are__start">
-        <h2 class="who-we-are__heading heading">Who we are</h2>
-      </div>
+    <div class="container">
+      <section class="hero">
+        <div class="hero__start">
+          <h2 class="hero__heading heading">Work the way that works for you</h2>
+          <p class="paragraph">
+            We are advisors and engineers, who cope with business challenges
+            using smart and fast management approaches and innovative technology
+            solutions
+          </p>
+          <button class="hero__btn">Let's start</button>
+        </div>
+        <div class="hero__end">
+          <img src="public/images/hero-end.png" alt="" />
+        </div>
+      </section>
+    </div>
+    <div class="container-who-we-are">
+      <section id="who-we-are" class="who-we-are">
+        <div class="who-we-are__start">
+          <h2 class="who-we-are__heading heading">Who we are</h2>
+        </div>
 
-      <div class="who-we-are__end">
-        <p class="who-we-are__paragraph">
-          Be.next is an IT & Business oriented company that connects clients and
-          partners all over the world with high-skilled software development
-          specialists and teams from Europe. We have been working with
-          businesses from startups to corporations and know how handle tech
-          demand in short terms and with maximal efficiency.
-        </p>
-      </div>
-    </section>
+        <div class="who-we-are__end">
+          <p class="paragraph">
+            Be.next is an IT & Business oriented company that connects clients
+            and partners all over the world with high-skilled software
+            development specialists and teams from Europe. We have been working
+            with businesses from startups to corporations and know how handle
+            tech demand in short terms and with maximal efficiency.
+          </p>
+        </div>
+      </section>
+    </div>
     <section id="how-it-works" class="how-we-work">
       <div class="container how-we-work__content">
         <h2 class="how-we-work__heading heading">How we work</h2>
-        <p class="how-we-work__paragraph">
+        <p class="how-we-work__paragraph paragraph">
           Appeared a new need of a particular technical expert or support? Share
           it with us!
         </p>
@@ -171,13 +175,12 @@
       <section id="get-in-touch" class="contact-us container">
         <div class="contact-us__start">
           <h2 class="contact-us__heading heading">Contact us</h2>
-          <p class="contact-us__paragraph">Let's work together</p>
+          <p class="contact-us__paragraph paragraph">Let's work together</p>
         </div>
-        <div class="separator desktop tablet"></div>
         <div class="contact-us__end">
           <form action="submit" method="post">
             <div class="contact-us__form">
-              <label for="Full name">
+              <label class="form-input-label" for="full name">
                 <input
                   class="contact-us__form-input"
                   type="text"
@@ -186,7 +189,7 @@
                   placeholder="Name"
                 />
               </label>
-              <label for="email">
+              <label class="form-input-label" for="email">
                 <input
                   class="contact-us__form-input"
                   type="email"
@@ -195,7 +198,7 @@
                   placeholder="Email"
                 />
               </label>
-              <label for="your message">
+              <label class="form-input-label" for="your message">
                 <input
                   type="text"
                   class="contact-us__form-input"

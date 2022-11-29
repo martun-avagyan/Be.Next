@@ -38,14 +38,14 @@ a,
 a:hover,
 a:active,
 a:visited {
-  color: #000;
+  color: var(--color-primary);
   text-decoration: none;
 }
 
 .container {
   margin: 0px auto;
-  padding: 0px 30px;
-  max-width: 1280px;
+  padding: 0px 60px;
+  max-width: 1440px;
 }
 
 .heading {
@@ -93,16 +93,11 @@ a:visited {
   height: 100%;
 }
 
-.modal {
-  display: flex;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  margin: 0 auto;
-  background: #fff;
+.paragraph {
+  padding: 40px 0;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: Montserrat-400;
 }
 
 /* NAVBAR */
@@ -117,11 +112,8 @@ a:visited {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding: 30px 70px;
   font-family: Montserrat-500;
-}
-
-.navbar__logo {
 }
 
 .navbar__links {
@@ -139,7 +131,7 @@ a:visited {
 .navbar__btn {
   border: 1px solid #403636;
   border-radius: 10px;
-  background: #ffffff;
+  background: #fff;
   padding: 10px 18px;
   color: var(--color-nav);
   font-size: 18px;
@@ -148,19 +140,13 @@ a:visited {
 
 .navbar__btn:hover {
   cursor: pointer;
-  border-color: #f36e0c;
-  background-color: #f36e0c;
+  border-color: var(--color-secondary);
+  background-color: var(--color-secondary);
   color: white;
-}
-
-.heading {
 }
 
 .menu-icon {
   cursor: pointer;
-}
-
-.paragraph {
 }
 
 /* HERO */
@@ -169,14 +155,7 @@ a:visited {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 84px;
-}
-
-.hero__paragraph {
-  margin: 60px 0 40px 0;
-  font-size: 16px;
-  line-height: 30px;
-  font-family: Montserrat-400;
+  padding-top: 40px;
 }
 
 .hero__btn {
@@ -185,30 +164,27 @@ a:visited {
   border-radius: 100px;
   background: linear-gradient(0deg, #e40a0a 0%, #ff5c00 100%);
   padding: 14px 32px;
-  color: #ffffff;
+  color: #fff;
   font-size: 18px;
   font-family: Montserrat-600;
 }
 
 /* WHO WE ARE */
 
+.container-who-we-are {
+  background-color: #fffbf8;
+  padding: 40px 60px;
+}
+
 .who-we-are {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 120px;
-  margin-top: 160px;
 }
 
 .who-we-are__end {
   flex: 0.9;
-}
-
-.who-we-are__paragraph {
-  margin: 60px 0 40px 0;
-  font-size: 16px;
-  line-height: 30px;
-  font-family: Montserrat-400;
 }
 
 /* HOW WE WORK */
@@ -226,8 +202,7 @@ a:visited {
 }
 
 .how-we-work__paragraph {
-  margin-top: 30px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .how-we-work__steps {
@@ -246,7 +221,7 @@ a:visited {
 
 .how-we-work__step-paragraph {
   margin-top: 26px;
-  color: #ffffff;
+  color: #fff;
   font-size: 14px;
   line-height: 28px;
 }
@@ -300,20 +275,19 @@ a:visited {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 110px;
-  margin-bottom: 0;
-  padding-bottom: 100px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .contact-us__start {
   align-self: flex-start;
-  border-right: 3px solid #d6e6ff;
+  border-right: 4px solid #d6e6ff;
   background-image: url(public/images/Couple-with-a-dog.png);
   background-position: center;
-  background-position: 25% 100%;
-  background-size: 100%;
-  background-size: 70%;
+  background-position: 0% 140%;
+  background-size: 80%;
   background-repeat: no-repeat;
+  padding-right: 60px;
   width: 100%;
   height: 602px;
 }
@@ -325,19 +299,13 @@ a:visited {
   padding-bottom: 20px;
 }
 
-.contact-us__paragraph {
-  margin-top: 30px;
-  font-size: 18px;
-  line-height: 30px;
-  font-family: Montserrat-600;
-}
-
 .separator {
   background-image: url(public/images/separator.svg);
   padding: 0 40px;
 }
 
 .contact-us__end {
+  padding-left: 60px;
   width: 100%;
 }
 
@@ -347,6 +315,10 @@ a:visited {
   justify-content: center;
   align-items: center;
   gap: 70px;
+}
+
+.form-input-label {
+  width: 100%;
 }
 
 .contact-us__form-input {
@@ -368,7 +340,7 @@ a:visited {
 }
 .contact-us__form-input:active,
 .contact-us__form-input:focus {
-  border-bottom: 4px solid #f36e0c;
+  border-bottom: 4px solid var(--color-secondary);
 }
 
 .contact-us__form-input:active::placeholder,
@@ -385,7 +357,7 @@ a:visited {
   background: linear-gradient(0deg, #e40a0a 0%, #ff5c00 100%);
   padding: 14px 32px;
   width: 100%;
-  color: #ffffff;
+  color: #fff;
   font-size: 18px;
   font-family: Montserrat-600;
 }
@@ -394,7 +366,7 @@ a:visited {
 
 .footer {
   background-color: #081a4a;
-  padding: 20px 0;
+  padding: 60px 0;
 }
 
 .footer-content {
@@ -405,7 +377,7 @@ a:visited {
 }
 
 .footer__reserved {
-  color: #ffffff;
+  color: #fff;
   font-size: 14px;
   font-family: Montserrat-600;
 }
