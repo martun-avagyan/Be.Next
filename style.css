@@ -125,7 +125,41 @@ a:visited {
 
 .navbar__links a:hover,
 .navbar__links a:active {
-  border-bottom: 4px solid var(--color-secondary);
+  /* border-bottom: 4px solid var(--color-secondary); */
+
+  position: relative;
+}
+
+.navbar__links {
+  transition: 6s;
+}
+
+.navbar__links a:hover::after {
+  display: block;
+  position: absolute;
+  right: 50%;
+  margin-top: 5px;
+  border: 1px solid var(--color-secondary);
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  width: 3px;
+  height: 3px;
+  content: "";
+}
+
+.navbar__links a:active::after,
+.navbar__links a:visited::after {
+  transform: scaleX(1);
+  transition: 0.5s;
+}
+
+.navbar__links a:visited::after {
+  transform: scaleX(100%);
+  transition: 0.5s;
+}
+
+.navbar__links a:active:after {
+  transition: 1s;
 }
 
 .navbar__btn {
@@ -169,11 +203,20 @@ a:visited {
   font-family: Montserrat-600;
 }
 
+.hero__end {
+  width: 100%;
+}
+
+.hero__end img {
+  width: 100%;
+}
+
 /* WHO WE ARE */
 
 .container-who-we-are {
+  margin-top: 60px;
   background-color: #fffbf8;
-  padding: 40px 60px;
+  padding: 30px 60px;
 }
 
 .who-we-are {
@@ -184,7 +227,7 @@ a:visited {
 }
 
 .who-we-are__end {
-  flex: 0.9;
+  flex: 1;
 }
 
 /* HOW WE WORK */
@@ -284,12 +327,11 @@ a:visited {
   border-right: 4px solid #d6e6ff;
   background-image: url(public/images/Couple-with-a-dog.png);
   background-position: center;
-  background-position: 0% 140%;
-  background-size: 80%;
+  background-size: 65%;
   background-repeat: no-repeat;
   padding-right: 60px;
   width: 100%;
-  height: 602px;
+  height: 660px;
 }
 
 .contact-us__heading {
@@ -443,6 +485,15 @@ a:visited {
     right: 5%;
     bottom: 5%;
   }
+
+  .hero__btn {
+    margin: 20px 0;
+  }
+
+  .footer-content {
+    gap: 3%;
+    padding: 0;
+  }
 }
 
 @media (max-width: 780px) {
@@ -458,12 +509,27 @@ a:visited {
     display: block;
   }
 
-  .separator {
-    background-image: none;
+  .hero {
+    flex-direction: column;
   }
 
   .contact-us {
     flex-direction: column;
-    align-items: center;
+  }
+  .who-we-are {
+    flex-direction: column;
+  }
+
+  .contact-us__start {
+    border-right: none;
+    background-position: center;
+    background-size: 80%;
+    padding: 0;
+    padding-top: 50px;
+    width: 100%;
+  }
+  .contact-us__end {
+    padding: 0;
+    width: 100%;
   }
 }
